@@ -34,3 +34,35 @@ body{
   padding: 1em;
 }
 
+.content-title{
+  margin-bottom: 0.5em;
+}
+
+.conf_option{
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 1.5em;
+}
+
+.cta{
+  width: 8em;
+  height: 2.5em;
+  background-color: darkred;
+  border-radius: 30px;
+  position: absolute;
+  right: 3em;
+  bottom: 5em;
+}
+
+.cta h5{
+margin: 0.7em 0.5em;
+text-align: center;
+color: white;
+}
