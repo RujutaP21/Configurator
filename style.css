@@ -8,18 +8,56 @@ body{
 }
 
 .logo{
-  margin: 1em;
-  padding: 0 2em;
+  margin: 0.7em;
+  padding: 0 3em;
+  font-weight: bold;
+  font-family:Georgia;
+  font-style: italic;
+  color: darkred;
 }
 
 .wrapper{
   width: 90vw;
   height: 90vh;
   margin: auto;
-  background-color: rgb(255, 255, 248);
+  background-color: rgb(245, 235, 216);
   border-radius: 2%;
   box-shadow: 2px 2px 5px lightgrey;
   position: relative;
+}
+@media (max-width: 600px) {
+  .wrapper{
+    height: auto;
+  }
+}
+
+h2{
+  width: max-content;
+  margin: 0.5em 0;
+  font-size: 1.5em;
+  color: darkred;
+  font-weight: lighter;
+  text-transform: uppercase;
+  position: absolute;
+  top: -30%;
+}
+@media (max-width: 400px) {
+  h2{
+    margin: 0.5em 0;
+    font-size: 1em;
+    top: -10%;
+    left: -10%;
+  }
+}
+
+h4{
+  font-size: 1em;
+  color: darkred;
+  font-weight: bold;
+}
+
+p{
+  font-size: 0.8em;
 }
 
 .container{
@@ -28,41 +66,175 @@ body{
   margin: 0;
   height: inherit;
 }
+@media (max-width: 400px) {
+  .container{
+    grid-template-columns: 100%;
+  }
+}
+
+.productview{
+  width: 18em;
+  height: 25em;
+  position: relative;
+  left: 30%;
+  top: 25%;
+}
+
+.productview svg{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media (max-width: 400px) {
+  .productview svg{
+    left: -10%;
+  }
+}
+
+.productview img{
+  width: 10em;
+  height: 10em;
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 40%;
+  opacity: 0;
+}
+@media (max-width: 400px) {
+  .productview img{
+   width: 5em;
+   height: 5em;
+   object-fit: fill;
+   left: 15%;
+   top: 10%;
+  }
+}
+
+.form{
+  opacity: 0;
+  transform: translateX(100px);
+}
+@media (max-width: 400px) {
+  .form{
+   width: 13em;
+   height: 13em;
+   object-fit: fill;
+  }
+}
 
 .productcontent{
   background-color: #fefefe;
-  padding: 1em;
+  padding: 0 1em;
 }
 
 .content-title{
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
 }
 
 .conf_option{
   width: 3.5em;
   height: 3.5em;
   border-radius: 50%;
-  background-color: lightgray;
+  background-color: rgb(238, 236, 231);
+  position: relative;
+  margin: 0 1.5em;
+  padding: 0.5em 0.7em;
+  box-shadow: 5px 2px 10px rgb(233, 227, 227);
 }
 
-section{
+.conf_option:hover{
+  border: 1px solid darkred;
+  box-shadow: 5px 2px 10px rgba(179, 179, 179, 0.719);
+}
+
+#Rose{
+  background-color: #F28FB1;
+}
+
+#Lavender{
+  background-color: #EDD2FF;
+}
+
+#Sandalwood{
+  background-color: #FFEEB7;
+}
+
+#Strawberry{
+  background-color: #FFBFBF;
+}
+
+#CoconutMilk{
+  background-color: #F9ECEC;
+}
+
+.conf_option img{
+  display: block;
+  position: absolute;
+  width: 2em;
+  height: 2.5em;
+}
+
+p{
+  padding: 0.2em;
+  margin: 0.5em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  text-align: center;
+ }
+
+ a:hover{
+   color: darkred;
+ }
+
+ a:active{
+   color: darkred;
+ }
+
+ a:active .conf_option{
+  border: 1px solid darkred;
+  color: darkred;
+ }
+ 
+
+.grid-container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 1.5em;
 }
 
+@media (max-width: 1200px) {
+  .grid-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .grid-container{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .grid-container{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
 .cta{
   width: 8em;
   height: 2.5em;
   background-color: darkred;
-  border-radius: 30px;
+  border-radius: 2em;
   position: absolute;
   right: 3em;
-  bottom: 5em;
+  bottom: 1.5em;
 }
 
 .cta h5{
-margin: 0.7em 0.5em;
+margin: 0.8em 0.5em;
 text-align: center;
 color: white;
 }

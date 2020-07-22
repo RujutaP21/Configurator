@@ -12,76 +12,116 @@
   <div class="wrapper">
     <div class="container">
       <div class="productview">
+        <h2>Create your own candle</h2>
+        <svg version="1.1" id="shapeJar" class="form" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 300 400" fill="none" stroke= "#000000" stroke-width = "5" stroke-miterlimit="10" stroke-linejoin = "round">
+          <g>
+            <path d="M255.8,177.4v152.4H44.3V177.4c0,0,37.3-28.3,19.9-62.4H232C214.6,147.6,255.8,177.4,255.8,177.4z"/>
+            <path d="M232,102.5V115H64.2v-12.2C64.2,94.6,70.8,88,79,88h57.4c-2.1-1.9-3.4-4.6-3.4-7.6c0-5.6,4.5-10.1,10.1-10.1
+               c5.6,0,10.1,4.5,10.1,10.1c0,3-1.3,5.7-3.4,7.6h67.7C225.5,88,232,94.5,232,102.5z"/>
+          </g>
+        </svg>
 
+        <svg version="1.1" id="shapeTumbler" class="form" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" viewBox="0 0 300 400" fill="none" stroke= "#000000" stroke-width = "5" stroke-miterlimit="10" stroke-linejoin = "round">
+          <g>
+            <path d="M240.3,295.4H65.4C44.3,249,40.4,58.2,40.4,58.2h224.4C264.7,58.2,262.3,244,240.3,295.4z"/>
+            <path d="M217.1,357.2H89.9c0,0-12.7-21.9-24.4-61.8h174.9C231.4,333.1,217.1,357.2,217.1,357.2z"/>
+          </g>
+        </svg>
+
+        <svg version="1.1" id="shapeVortex" class="form" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+             y="0px" viewBox="0 0 300 400" fill="none" stroke= "#000000" stroke-width = "5" stroke-miterlimit="10">
+          <g>
+            <rect x="65.2" y="121.7" class="st0" width="174.6" height="157"/>
+            <rect x="65.2" y="278.7" class="st0" width="174.6" height="45.7"/>
+            <polygon points="239.8,121.7 65.2,121.7 102.9,92.2 204.8,92.2 	" stroke-linejoin = "round"/>
+            <line x1="148.6" y1="75.6" x2="149.3" y2="92.2"/>
+          </g>
+        </svg>
+        <img src="images/sparkleproduct.svg" id= "decorSparkle" class = "decor" alt="Sparkle">
+        <img src="images/petalproduct.svg" id= "decorPetal" class = "decor" alt="Petal">
       </div>
 
       <div class="productcontent">
-        <h2>Create your own candle</h2>
 
         <article>
           <h4 class="content-title">FORM</h4>
-          <hr>
-          <section>
-          <a href="">
+          <div class="grid-container">
+          <a href="#" class="active" id="buttonJar" data-shape="Jar">
             <div class="conf_option background">
-              <img src="" alt="">
+              <img src="images/jar.svg" alt="Jar">
             </div>
+            <p>Jar</p>
           </a>
-          <a href="">
+          <a href="#" id="buttonTumbler" data-shape="Tumbler">
             <div class="conf_option background">
-              <img src="" alt="">
+              <img src="images/tumbler.svg" alt="Tumbler">
             </div>
+            <p>Tumbler</p>
           </a>
-          <a href="">
+          <a href="#" id="buttonVortex" data-shape="Vortex">
             <div class="conf_option background">
-              <img src="" alt="">
+              <img src="images/vortex.svg" alt="Vortex">
             </div>
+            <p>Vortex</p>
           </a>
-          </section>
+        </div>
         </article>
 
         <article>
           <h4 class="content-title">FRAGNANCE</h4>
-          <hr>
-          <section>
-          <a href="">
-            <div class="conf_option background">
-              <img src="" alt="">
+          <div class="grid-container">
+          <a href="#" id="buttonRose">
+            <div class="conf_option" id="Rose">
+              <img src="images/rose.svg" alt="F28FB1" aria-label= "#911F46">
             </div>
+            <p>Rose</p>
           </a>
-          <a href="">
-            <div class="conf_option background">
-              <img src="" alt="">
+          <a href="#" id="buttonLavender">
+            <div class="conf_option" id="Lavender">
+              <img src="images/lavender.svg" alt="EDD2FF" aria-label= "#3A0D58">
             </div>
+            <p>Lavender</p>
           </a>
-          <a href="">
-            <div class="conf_option background">
-              <img src="" alt="">
+          <a href="#" id="buttonSandalwood">
+            <div class="conf_option" id="Sandalwood">
+              <img src="images/sandalwood.svg" alt="FFEEB7" aria-label= "#8D6F0F">
             </div>
+            <p>Sandalwood</p>
           </a>
-          <a href="">
-            <div class="conf_option background">
-              <img src="" alt="">
+          <a href="#" id="buttonStrawberry">
+            <div class="conf_option" id="Strawberry">
+              <img src="images/strawberry.svg" alt="FFBFBF" aria-label= "#3B0909">
             </div>
+            <p>Strawberry</p>
           </a>
-          <a href="">
-            <div class="conf_option background">
-              <img src="" alt="">
+          <a href="#" id="buttonCoconutMilk">
+            <div class="conf_option" id="CoconutMilk">
+              <img src="images/coconut.svg" alt="F9ECEC" aria-label= "#877979">
             </div>
+            <p>Coconut</p>
           </a>
-          </section>
+          </div>
         </article>
 
         <article>
           <h4 class="content-title">DECOR</h4>
-          <hr>
-          <section>
-          <a href="">
-            <div class="conf_option background">
-              <img src="" alt="">
-            </div>
-          </a>
-          </section>
+          <div class="grid-container">
+            <a href="#" id="buttonSparkle">
+              <div class="conf_option" id="Sparkle">
+                <img src="images/sparkle.svg" alt="Sparkle">
+              </div>
+              <p>Sparkle</p>
+            </a>
+
+            <a href="#" id="buttonPetal">
+              <div class="conf_option" id="Petal">
+                <img src="images/flower.svg" alt="Petal">
+              </div>
+              <p>Petal</p>
+            </a>
+          </div>
         </article>
 
         <div class="cta">
@@ -90,5 +130,67 @@
       </div>
     </div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+  <script>
+    document.getElementById('buttonJar').addEventListener('click', changeShape);
+    document.getElementById('buttonTumbler').addEventListener('click', changeShape);
+    document.getElementById('buttonVortex').addEventListener('click', changeShape);
+
+    let lastShapeClicked = document.getElementById('buttonJar');
+
+    function changeShape(event) {
+      let elementToShow = '#shape' + event.target.alt;
+      gsap.to('.form', {scale:0.5, opacity: 0, duration: 0.25 });
+      gsap.to(elementToShow, { scale:1, translateX:0 , opacity: 1, duration: 1, delay: .25});
+
+      if (lastShapeClicked) {
+        lastShapeClicked.classList.remove('active');
+      }
+      event.target.classList.add('active');
+      lastShapeClicked = event.target;
+    }
+
+
+    document.getElementById('buttonRose').addEventListener('click', changeColor);
+    document.getElementById('buttonLavender').addEventListener('click', changeColor);
+    document.getElementById('buttonSandalwood').addEventListener('click', changeColor);
+    document.getElementById('buttonStrawberry').addEventListener('click', changeColor);
+    document.getElementById('buttonCoconutMilk').addEventListener('click', changeColor);
+
+    let lastColorButtonClicked = document.getElementById('buttonRose');
+
+    function changeColor(event) {
+      let fillColor = event.target.alt;
+      let strokeColor = event.target.ariaLabel;
+      gsap.to('.form', { fill: fillColor, duration: .25 });
+      gsap.to('.form', { stroke: strokeColor, duration: .25 })
+
+      if (lastColorButtonClicked) {
+        lastColorButtonClicked.classList.remove('active');
+      }
+      event.target.classList.add('active');
+      lastColorButtonClicked = event.target;
+    }
+
+    document.getElementById('buttonSparkle').addEventListener('click', changeDecor);
+    document.getElementById('buttonPetal').addEventListener('click', changeDecor);
+
+    let lastDecorButtonClicked = document.getElementById('buttonDecor');
+
+    function changeDecor(event) {
+      let elementToShow = '#decor' + event.target.alt;
+      gsap.to('.decor', { opacity: 0, duration: .25 });
+      gsap.to(elementToShow, { opacity: 1, duration: .25, delay: .25 });
+
+      if (lastDecorButtonClicked) {
+        lastDecorButtonClicked.classList.remove('active');
+      }
+      event.target.classList.add('active');
+      lastDecorButtonClicked = event.target;
+    }
+
+
+  </script>
 </body>
 </html>
