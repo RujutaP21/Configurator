@@ -136,6 +136,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
 
   <script>
+
+    // Form of the candle
+
     document.getElementById('buttonJar').addEventListener('click', changeShape);
     document.getElementById('buttonTumbler').addEventListener('click', changeShape);
     document.getElementById('buttonVortex').addEventListener('click', changeShape);
@@ -144,7 +147,7 @@
 
     function changeShape(event) {
       let elementToShow = '#shape' + event.target.alt;
-      gsap.to('.form', {scale:0.5, opacity: 0, duration: 0.25 });
+      gsap.to('.form', {scale:0.5, yoyo:true, opacity: 0, duration: 0.25 });
       gsap.to(elementToShow, { scale:1, translateX:0 , opacity: 1, duration: 1, delay: .25});
 
       if (lastShapeClicked) {
@@ -154,6 +157,7 @@
       lastShapeClicked = event.target;
     }
 
+    // Color of the candle
 
     document.getElementById('buttonRose').addEventListener('click', changeColor);
     document.getElementById('buttonLavender').addEventListener('click', changeColor);
@@ -166,8 +170,8 @@
     function changeColor(event) {
       let fillColor = event.target.alt;
       let strokeColor = event.target.ariaLabel;
-      gsap.to('.form', { fill: fillColor, duration: .25 });
-      gsap.to('.form', { stroke: strokeColor, duration: .25 })
+      gsap.to('.form', { fill: fillColor, duration: 0.5});
+      gsap.to('.form', { stroke: strokeColor, duration: 0.5 })
 
       if (lastColorClicked) {
         lastColorClicked.classList.remove('active');
@@ -175,6 +179,8 @@
       event.target.classList.add('active');
       lastColorClicked = event.target;
     }
+
+    // Decor of the candle
 
     document.getElementById('buttonSparkle').addEventListener('click', changeDecor);
     document.getElementById('buttonPetal').addEventListener('click', changeDecor);
