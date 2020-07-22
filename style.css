@@ -52,7 +52,7 @@ h2{
     margin: 0.5em 0;
     font-size: 1em;
     top: -10%;
-    left: -10%;
+    left: -15%;
   }
 }
 
@@ -85,6 +85,13 @@ p{
   left: 30%;
   top: 25%;
 }
+@media (max-width: 400px) {
+  .productview {
+    width: 13em;
+    height: 20em;
+  }
+}
+
 
 .productview svg{
   position: absolute;
@@ -93,7 +100,7 @@ p{
 }
 @media (max-width: 400px) {
   .productview svg{
-    left: -10%;
+    left: -12%;
   }
 }
 
@@ -111,8 +118,8 @@ p{
    width: 5em;
    height: 5em;
    object-fit: fill;
-   left: 12%;
-   top: 15%;
+   left: 20%;
+   top: 18%;
   }
 }
 
