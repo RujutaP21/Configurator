@@ -132,6 +132,7 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+  
   <script>
     document.getElementById('buttonJar').addEventListener('click', changeShape);
     document.getElementById('buttonTumbler').addEventListener('click', changeShape);
@@ -158,7 +159,7 @@
     document.getElementById('buttonStrawberry').addEventListener('click', changeColor);
     document.getElementById('buttonCoconutMilk').addEventListener('click', changeColor);
 
-    let lastColorButtonClicked = document.getElementById('buttonRose');
+    let lastColorClicked = document.getElementById('buttonRose');
 
     function changeColor(event) {
       let fillColor = event.target.alt;
@@ -166,28 +167,28 @@
       gsap.to('.form', { fill: fillColor, duration: .25 });
       gsap.to('.form', { stroke: strokeColor, duration: .25 })
 
-      if (lastColorButtonClicked) {
-        lastColorButtonClicked.classList.remove('active');
+      if (lastColorClicked) {
+        lastColorClicked.classList.remove('active');
       }
       event.target.classList.add('active');
-      lastColorButtonClicked = event.target;
+      lastColorClicked = event.target;
     }
 
     document.getElementById('buttonSparkle').addEventListener('click', changeDecor);
     document.getElementById('buttonPetal').addEventListener('click', changeDecor);
 
-    let lastDecorButtonClicked = document.getElementById('buttonDecor');
+    let lastDecorClicked = document.getElementById('buttonDecor');
 
     function changeDecor(event) {
       let elementToShow = '#decor' + event.target.alt;
       gsap.to('.decor', { opacity: 0, duration: .25 });
       gsap.to(elementToShow, { opacity: 1, duration: .25, delay: .25 });
 
-      if (lastDecorButtonClicked) {
-        lastDecorButtonClicked.classList.remove('active');
+      if (lastDecorClicked) {
+        lastDecorClicked.classList.remove('active');
       }
       event.target.classList.add('active');
-      lastDecorButtonClicked = event.target;
+      lastDecorClicked = event.target;
     }
 
 

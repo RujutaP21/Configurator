@@ -15,6 +15,11 @@ body{
   font-style: italic;
   color: darkred;
 }
+@media (max-width: 400px) {
+  .logo{
+    padding: 0 1em;
+  }
+}
 
 .wrapper{
   width: 90vw;
@@ -27,6 +32,7 @@ body{
 }
 @media (max-width: 600px) {
   .wrapper{
+    width: 95%;
     height: auto;
   }
 }
@@ -105,8 +111,8 @@ p{
    width: 5em;
    height: 5em;
    object-fit: fill;
-   left: 15%;
-   top: 10%;
+   left: 12%;
+   top: 15%;
   }
 }
 
@@ -233,8 +239,21 @@ a{
   bottom: 1.5em;
 }
 
+@media (max-width: 400px) {
+  .cta{
+    width: 5em;
+    height: 2.5em;
+    right: 1em;
+  }
+}
+
 .cta h5{
 margin: 0.8em 0.5em;
 text-align: center;
 color: white;
+}
+@media (max-width: 400px) {
+  .cta h5{
+    margin: 0.2em;
+  }
 }
