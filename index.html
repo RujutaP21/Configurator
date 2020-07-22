@@ -126,7 +126,7 @@
           </div>
         </article>
 
-        <div class="cta">
+        <div class="cta" onclick="popupMessage()">
           <h5>ORDER NOW</h5>
         </div>
       </div>
@@ -193,6 +193,9 @@
       lastDecorClicked = event.target;
     }
 
+    function popupMessage() {
+      alert("Your order is placed. You will be contacted soon");
+    }
 
   </script>
 </body>
