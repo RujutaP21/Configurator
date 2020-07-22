@@ -1,2 +1,2 @@
 # Configurator
- Custom change website
+ Custom candle configurator website
